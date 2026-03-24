@@ -5,21 +5,21 @@
 class Ploydoo < Formula
   desc "CLI interactivo para montar entornos de desarrollo Odoo"
   homepage "https://github.com/alvarezperezda/ploydoo"
-  version "1.3.0"
+  version "1.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alvarezperezda/ploydoo/releases/download/v1.3.0/ploydoo_darwin_amd64.tar.gz"
-      sha256 "28e4a99d85e5719976620a89676e618e8904f18fbe87ec77d80b6430cf3f71bd"
+      url "https://github.com/alvarezperezda/ploydoo/releases/download/v1.3.1/ploydoo_darwin_amd64.tar.gz"
+      sha256 "a37ccc921117c974d6b554f611f67f471a2aa6c4d8b1f125bd8740a25b2e084f"
 
       define_method(:install) do
         bin.install "ploydoo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alvarezperezda/ploydoo/releases/download/v1.3.0/ploydoo_darwin_arm64.tar.gz"
-      sha256 "2da1fdc4e058eb62033d3c962cec3df0cee1f59e17c6c0e75ee582baf957af68"
+      url "https://github.com/alvarezperezda/ploydoo/releases/download/v1.3.1/ploydoo_darwin_arm64.tar.gz"
+      sha256 "7b0d137c417d19f8bb7947b35eaa450594cb44f33ac56e27a0a29f1c917fe214"
 
       define_method(:install) do
         bin.install "ploydoo"
@@ -29,15 +29,15 @@ class Ploydoo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alvarezperezda/ploydoo/releases/download/v1.3.0/ploydoo_linux_amd64.tar.gz"
-      sha256 "0f9d750c39fe96facb2e37487c30faa0563433536894e3a4f8d93879da49e34a"
+      url "https://github.com/alvarezperezda/ploydoo/releases/download/v1.3.1/ploydoo_linux_amd64.tar.gz"
+      sha256 "6a5c6b55f455097ea0a77fee2fa23454cd8023b9a288a22910c7edd09de73228"
       define_method(:install) do
         bin.install "ploydoo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alvarezperezda/ploydoo/releases/download/v1.3.0/ploydoo_linux_arm64.tar.gz"
-      sha256 "bf853e7fa10867f149a12fccfb6d29d51856bd118b17c8654d2e4f6bd9e9c583"
+      url "https://github.com/alvarezperezda/ploydoo/releases/download/v1.3.1/ploydoo_linux_arm64.tar.gz"
+      sha256 "fcf3cce55dd78f285822d1c63df0022f02de01318613b6fcda087664b078d58f"
       define_method(:install) do
         bin.install "ploydoo"
       end
